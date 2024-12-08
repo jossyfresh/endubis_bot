@@ -11,6 +11,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the project files into the container
 COPY . .
 
+EXPOSE 5000
+
 # Set the environment variable to prevent Python from buffering output
 ENV PYTHONUNBUFFERED=1
 
